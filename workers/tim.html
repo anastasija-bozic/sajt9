@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./tim.css">
+    
+    </head>
+    <body>
+
+    <div class="top">
+		<ul class="primary-nav">
+            <img src="img/logo-girls-trip.png" alt="Logo" class="nav-img naslov-img-left">
+            <li><a href="../pocetna.html">Home</a></li>
+            <li><a href="../gallery/index.html">Gallery</a></li>
+            <li><a href="../Kontakt/kontakt.html">Contact</a></li>
+            <li><a href="../info/info.html">Travel Info</a></li>
+            <li><a href="../plejliste/Music.html">Music</a></li>
+            <li><a href="#">Workers</a></li>
+            <img src="img/logo-girls-trip.png" alt="Logo" class="nav-img naslov-img-left">
+				</ul>
+	</div>
+
+    <div class="tekst3">
+        <h1>Vaše odabrane organizatorke:</h1>
+    </div>
+    
+
+    <div class="card-container">
+        <div class="card">
+			<div class="top">
+			</div>
+            <div class="middle">
+                <img class="a-osoba" src="img/niki.png" alt="Nikolina Stanić">
+                <div class="sekcija">
+                    <p class="ime"><strong>Nikolina Stanić</strong></p>
+                    <div class="mini-sekcija">
+                        <div class="lopte">
+                            <a href="https://www.instagram.com/_stanicc/"><img class="lopta" src="img/instagram.svg" alt="Instagram"></a>
+                        </div>
+                        <div class="lopte">
+                            <a href="https://www.viber.com/en/"><img class="lopta" src="img/viber.svg" alt="Viber"></a>
+                        </div>
+                        <div class="lopte">
+                            <a href="https://web.telegram.org/a/"><img class="lopta" src="img/telegram.svg" alt="Telegram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <button>Pozovi</button>
+            </div>
+        </div>
+        <div class="card">
+			<div class="top">
+			</div>
+            <div class="middle">
+                <img class="a-osoba" src="img/ja.png" alt="Anastasija Božić">
+                <div class="sekcija">
+                    <p class="ime"><strong>Anastasija Božić</strong></p>
+                    <div class="mini-sekcija">
+                        <div class="lopte">
+                            <a href="https://www.instagram.com/anastasijabozicc/"><img class="lopta" src="img/instagram.svg" alt="Instagram"></a>
+                        </div>
+                        <div class="lopte">
+                            <a href="https://www.viber.com/en/"><img class="lopta" src="img/viber.svg" alt="Viber"></a>
+                        </div>
+                        <div class="lopte">
+                            <a href="https://web.telegram.org/a/"><img class="lopta" src="img/telegram.svg" alt="Telegram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <button>Pozovi</button>
+            </div>
+        </div>
+        <div class="card">
+			<div class="top">
+			</div>
+            <div class="middle">
+                <img class="a-osoba" src="img/aleks2.png" alt="Aleksandra Stanimirović">
+                <div class="sekcija">
+                    <p class="ime"><strong>Aleksandra Stanimirović</strong></p>
+                    <div class="mini-sekcija">
+                        <div class="lopte">
+                            <a href="https://www.instagram.com/st__aleksandra/"><img class="lopta" src="img/instagram.svg" alt="Instagram"></a>
+                        </div>
+                        <div class="lopte">
+                            <a href="https://www.viber.com/en/"><img class="lopta" src="img/viber.svg" alt="Viber"></a>
+                        </div>
+                        <div class="lopte">
+                            <a href="https://web.telegram.org/a/"><img class="lopta" src="img/telegram.svg" alt="Telegram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <button>Pozovi</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const mobileBtn = document.getElementById('mobile-cta');
+        const nav = document.querySelector('nav');
+        const mobileBtnExit = document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+    </script>
+</body>
+</html>

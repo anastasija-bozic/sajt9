@@ -1,0 +1,365 @@
+body {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    background-color: #ffa9dd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar
+{
+	background: rgb(255, 0, 144);
+	padding: 1em;
+	height: 40px;
+}
+
+.primary-nav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}  
+
+.primary-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.3em;
+    text-align: center;
+    transition: font-weight 0.2s;
+}
+
+.primary-nav a:hover {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: -5px;
+}
+
+.mobile-menu {
+    cursor: pointer; 
+    width: 25px;
+    height: 25px;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+    background: #20272E;
+}
+
+ul.primary-nav {
+    margin-top: 5em;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.mobile-menu-exit {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.primary-nav {
+    list-style: none;
+    position: relative;
+    left: -140px;
+}
+
+/* .naslov {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 40px;
+    font-size: 25px;
+} */
+
+.naslov {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 30px;
+    width: 100%; /* Puna širina */
+    padding: 0px;
+    border-radius: 0; /* Uklonite zaobljenje */
+    text-align: center;
+    height: auto; /* Omogućava visini da se prilagodi sadržaju */
+    margin-top: 40px;
+    box-sizing: border-box; /* Uključite padding u ukupnu širinu */
+}
+
+.naslov .left, .naslov .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Prilagodite veličinu slike */
+    height: 200px; /* Prilagodite veličinu slike */
+}
+
+.naslov .left img, .naslov .right img {
+    width: 100%; /* Postavite širinu slike unutar div-a */
+    height: auto; /* Omogućava proporcionalnu visinu slike */
+    max-width: 200px; /* Maksimalna širina slike */
+    max-height: 200px; /* Maksimalna visina slike */
+}
+
+.naslov .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px; /* Razmak između slika i teksta */
+}
+
+.naslov h1 {
+    margin: 0;
+    font-size: 1.6em; /* Veličina fonta za h1 */
+}
+
+.naslov p {
+    font-size: 1.2em; /* Postavljamo veličinu fonta za paragraf */
+    font-style: italic;
+    margin: 10px 0 0 0;
+}
+
+.tekst2 {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-top: 40px;
+    font-size: 15px;
+	max-width: 450px; /* Postavljamo maksimalnu širinu na 450px */
+    margin-left: auto; /* Pomeramo na sredinu */
+    margin-right: auto; /* Pomeramo na sredinu */
+    padding: 0 20px; /* Dodajemo padding da ne bude nalepljeno uz ivice */
+    border-radius: 10px; /* Dodajemo zaobljenje ivica */
+	font-style: italic; /* Postavljamo da tekst bude italic */
+}
+
+
+.tekst3 {
+    background-color: rgb(255, 0, 144);
+    color: #20272E;
+    display: flex;
+    flex-direction: column; /* Postavljamo da flex kontejner bude kolona */
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 13px; /* Povećavamo veličinu fonta za bolju čitljivost */
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.prozor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+    background: #20272E;
+    color: #ffa9dd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prozor h2 {
+    color: rgb(255, 0, 144);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+
+.tekst3 h1 {
+    margin-bottom: 0px; /* Dodajemo margin ispod h1 elementa */
+}
+
+.tekst3 p {
+    font-size: 20px; /* Postavljamo veličinu fonta za paragraf */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .top {
+    height: 60px;
+    width: 230px;
+    background-color: rgb(255, 0, 144);
+}
+
+.card .middle {
+    height: 200px;
+    width: 230px;
+    background-color: #ffa9dd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centralizuje .a-osoba vertikalno unutar .middle */
+    align-items: center; /* Centralizuje .a-osoba horizontalno unutar .middle */
+}
+
+.a-osoba {
+    height: 150px; /* Primer visine .a-osoba elementa */
+    width: 150px; /* Primer širine .a-osoba elementa */
+    position: relative;
+    bottom: 0; /* Uklanjanje efekta bottom za centriranje */
+}
+
+.card .bottom {
+    height: 95px;
+    width: 230px;
+    background-color: rgb(255, 0, 144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 13px #000000;
+}
+
+.opis-osobe {
+    font-size: 13px;
+    position: centar;
+    bottom: 5px;
+}
+
+
+
+.lopta {
+    width: 43px;
+    height: 43px;
+}
+
+.lopta:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.sekcija {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+    color: #ffa9dd;
+}
+
+.mini-sekcija {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    bottom: 28px;
+}
+
+.ime {
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+}
+
+@media only screen and (min-width: 949px) {
+    .card-container {
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;    
+        align-items: center;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul.primary-nav {
+        margin: 0;
+    }
+
+    ul.primary-nav a {
+        color: #ffa9dd;
+        font-size: 1.3em;
+        padding: 1em;
+    }
+}

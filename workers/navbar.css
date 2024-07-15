@@ -1,0 +1,171 @@
+body{
+	background: #F2F2F2;
+	margin: 0;
+	font-family: 'roboto';
+}
+
+.navbar
+{
+	background:#20272E;
+	padding: 1em;
+	height: 40px;
+}
+
+nav {
+display:none;
+} 
+.container
+{
+	display: flex;
+	place-content:space-between;
+	align-items: center;
+	position: relative;
+	bottom: -5px;
+
+
+}
+
+.mobile-menu
+{
+	cursor: pointer; 
+	width: 20px;
+	height:20px;
+}
+
+nav.menu-btn {
+	display: block;
+}
+
+nav {
+	position: fixed;
+	z-index: 999;
+	width: 66%;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	padding: 1em;
+	background: #20272E;
+	}
+
+	ul.primary-nav {
+
+		margin-top: 5em;
+		color: white;
+	}	
+		a{
+			color: white;
+			text-decoration: none;
+			display: block;
+			padding: .5em;
+			font-size: 1.3em;
+			text-align: right;
+		}
+		a:hover{
+				font-weight:bold;
+			}
+
+
+	.mobile-menu-exit
+		{
+		width: 20px;
+		height: 20px;
+		float: right;
+		margin: .5em;
+		cursor: pointer;
+		}
+
+.primary-nav{
+	list-style: none;
+}
+@media only screen and (min-width: 768px){
+
+	.mobile-menu, .mobile-menu-exit
+	{
+		display: none;
+	}
+		.container{
+			justify-content: center;	
+			align-items: center;
+			position: relative;
+			bottom: 20px;
+		}
+
+
+	.navbar .container {
+		display: grid;
+		grid-template-columns: 180px auto;
+
+
+	}
+
+	.navbar nav{
+		display: flex;
+		justify-content: space-between;
+		background: none;
+		position: unset;
+		height: auto;
+		width: 100%;
+		padding:0;
+	}
+
+	ul{
+		display: flex;
+	}
+
+	a{
+		color: white;
+		font-size: 1em;
+		padding: 1em;
+	}
+	ul.primary-nav {
+		margin: 0;
+
+	}
+
+}
+
+/*<!DOCTYPE html>*/
+/*<html>*/
+/*	<head>*/
+/*		<link rel="stylesheet" type="text/css" href="tim.css">*/
+/*		<meta charset="utf-8">*/
+/*		<meta name="viewport" content="width=device-width, inital scale=1.0">*/
+/*		<link rel="preconnect" href="https://fonts.googleapis.com">*/
+/*	   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>*/
+/*       	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">*/
+/*	</head>*/
+/*	<body>*/
+/*			<div class="navbar">*/
+/*				<div class="container">*/
+/*					<img src="../Timovi2/img/Logo.svg">*/
+/*					<img id="mobile-cta" class="mobile-menu" src="../Timovi2/img/Bars-Solid.svg">*/
+/*					<nav>*/
+
+/*						<img id="mobile-exit" class="mobile-menu-exit" src="../Timovi2/img/X-Solid.svg">*/
+
+/*						<ul class="primary-nav">*/
+/*							<li><a href="#">About&nbsp;us</a></li>*/
+/*							<li><a href="#">Teams</a></li>*/
+/*							<li><a href="#">Contact</a></li>*/
+/*							<li><a href="#">Workers</a></li>*/
+/*						</ul>*/
+
+/*					*/
+/*						*/
+/*					*/
+/*					</nav>*/
+/*				</div>*/
+/*			</div>*/
+/*		<script type="text/javascript">*/
+/*			const mobileBtn = document.getElementById('mobile-cta')*/
+/*				  nav = document.querySelector('nav')*/
+/*				  mobileBtnExit = document.getElementById('mobile-exit');*/
+/*			mobileBtn.addEventListener('click',()=>{*/
+/*					nav.classList.add('menu-btn');*/
+/*			})*/
+/*			mobileBtnExit.addEventListener('click',()=>{*/
+/*					nav.classList.remove('menu-btn');*/
+/*			})*/
+/*		</script>*/
+/*	</body>*/
+/*</html>*/
